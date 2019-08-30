@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
-import { setRecoveryProps } from 'expo/build/ErrorRecovery/ErrorRecovery';
 
 const ImageDetail = ({imageSource, title, score}) => {
   return (
