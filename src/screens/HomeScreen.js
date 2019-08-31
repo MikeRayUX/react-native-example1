@@ -7,30 +7,69 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.text}>
         Hi there!
       </Text>
-      <Button
+      <TouchableOpacity
+        style={styles.button}
         onPress={() => navigation.navigate('Components')}
-        title="Go To Components Demo"
-      />
-      <Button
+      >
+        <Text style={styles.buttonText}>
+          Go To Components Demo
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
         onPress={() => navigation.navigate('List')}
-        title="Go To List Demo"
-      />
-      <Button
+      >
+        <Text style={styles.buttonText}>
+          Go To List Demo
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
         onPress={() => navigation.navigate('Image')}
-        title="Go To Image Screen"
-      />
-      <Button
+      >
+        <Text style={styles.buttonText}>
+          Go To Image Demo
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
         onPress={() => navigation.navigate('Counter')}
-        title="Go To Counter Screen"
-      />
-      <Button
+      >
+        <Text style={styles.buttonText}>
+          Go To Counter Demo
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
         onPress={() => navigation.navigate('Color')}
-        title="Go To Color Screen"
-      />
-      <Button
+      >
+        <Text style={styles.buttonText}>
+          Go To Color Demo
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
         onPress={() => navigation.navigate('Square')}
-        title="Go To Square Screen"
-      />
+      >
+        <Text style={styles.buttonText}>
+          Go To Square Demo
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('Text')}
+      >
+        <Text style={styles.buttonText}>
+          Go To Text Demo
+        </Text>
+      </TouchableOpacity>
+
     </View>
   )
 };
@@ -40,10 +79,16 @@ const styles = StyleSheet.create({
     fontSize: 50
   },
   button: {
-    width: '100%',
-    height: 100,
-    backgroundColor: 'green',
-    color: 'white'
+    height: 50,
+    margin: 10,
+    backgroundColor: '#2A75FB',
+    borderRadius: 3,
+    paddingTop: 14
+  },
+  buttonText: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 16
   }
 });
 
