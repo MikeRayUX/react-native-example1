@@ -18,7 +18,7 @@ const navigator = createStackNavigator(
     Square: SquareScreen
   },
   {
-    initialRouteName: 'Square',
+    initialRouteName: 'Counter',
     defaultNavigationOptions: {
       title: 'App'
     }
