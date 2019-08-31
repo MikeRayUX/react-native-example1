@@ -20,7 +20,7 @@ const navigator = createStackNavigator(
     Text: TextScreen
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Text',
     defaultNavigationOptions: {
       title: 'App'
     }
